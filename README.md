@@ -94,6 +94,31 @@ https://en.wikipedia.org/wiki/Bitwise_operation
 ## AND (&)
 ## OR (|)
 ## XOR (^)
+### XOR operator which could be used to detect the bit which appears odd number of times
+```
+XOR of zero and a bit results in that bit
+    0^x=x
+XOR of two equal bits (even if they are zeros) results in a zero
+    x^x=0
+```
+- one could see the bit in a bitmask only if it appears odd number of times
+### Seen once and Seen twice
+![](https://leetcode.com/articles/Figures/137/three.png)
+### Find unique number in array of all duplicate except one
+```
+If we take XOR of zero and some bit, it will return that bit
+    a^0=a
+If we take XOR of two same bits, it will return 0
+    a^a=0
+If we take XOR of three numbers, it will return unique one
+a^b^a=(a^a)^b=0^b=b    
+```
+### missing element
+https://leetcode.com/problems/missing-number/
+```
+n ^ (i^nums[i])
+```
+
 ## LEFT SHIFT (<<)
 ## RIGHT SHIFT (>>)
 
