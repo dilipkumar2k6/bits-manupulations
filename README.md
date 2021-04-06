@@ -66,6 +66,9 @@ Problems with unicode
 - Max it can goes `1111110x`
 ![](utf-8.png)
 
+## Problems
+https://leetcode.com/problems/utf-8-validation/
+
 # Base 32 vs base 62 vs base 64
 ## Base 64
 https://www.youtube.com/watch?v=aUdKd0IFl34
